@@ -23,3 +23,33 @@ The goal of this project is to practice:
 - Hardhat
 - Openzeppelin Contracts
 - Node.js + npm
+
+<hr>
+
+## Compile, testing and deployment with hardhat
+- copy the github repo and clone into VSCode
+
+Now `npm install`
+then Create file by running `New-item .env`
+
+In `.env` write:
+SEPOLIA_RPC_URL=NoSpacingNoquotes
+PRIVATE_KEY=NoSpacingNoQuotes
+
+Ensure that, At the top of the file `hardhat.config.js` there was:
+`require("dotenv").config();` is compulsory otherwise it's give you error
+And after solidity version in `hardhat.config.js` there was:
+`networks: {
+    sepolia: {
+      url: process.env.SEPOLIA_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+  },`
+  `SEPOLIA_RPC_URL` and `PRIVATE_KEY` values as it is like written in `.env`
+
+Now you run:
+`npx hardhat compile`
+if succussfully compiled run:
+`npx hardhat test`
+if he passed
+`npx hardhat run scripts/deploy.js --network sepolia`
