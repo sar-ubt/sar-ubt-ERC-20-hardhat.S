@@ -13,11 +13,6 @@ contract MyToken is ERC20, Ownable {
         _mint(owner, 1_000_000 ether);
     }
 
-modifier onlyOwner() {
-    require(msg.sender == owner, "Not owner");
-    _;
-}
-
     function mint(address to, uint256 amount) external onlyOwner {
         _mint(to, amount);
     }
