@@ -30,7 +30,9 @@ The goal of this project is to practice:
 - copy the github repo and clone into VSCode
 <br>
 
-Now `npm install`
+## Install Dependencies
+<br>
+`npm install`
 <br>
 then Create file by running `New-item .env`
 <br>
@@ -60,7 +62,7 @@ networks: {
   `SEPOLIA_RPC_URL` and `PRIVATE_KEY` values as it is like written in `.env`
   <br>
 
-Now you run:
+Now run:
 <br>
 `npx hardhat compile`
 <br>
@@ -72,3 +74,10 @@ if he passed
 <br>
 `npx hardhat run scripts/deploy.js --network sepolia`
 <br>
+## Deployment Output example
+
+Deployed contract address:
+0x1234...abcd
+
+## ERC20 Contract with Hardhat
+This project demonstrates how to create, test, and deploy an ERC20 token using Hardhat and OpenZeppelin.
