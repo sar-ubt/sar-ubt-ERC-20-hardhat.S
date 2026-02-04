@@ -49,17 +49,11 @@ Ensure that, At the top of the file `hardhat.config.js` there was:
 And after solidity version in `hardhat.config.js` there was:
 <br>
 ```JavaScript
-<br>
 networks: {
-<br>
     sepolia: {
-    <br>
       url: process.env.SEPOLIA_RPC_URL,
-      <br>
       accounts: [process.env.PRIVATE_KEY],
-      <br>
     },
-    <br>
   },
   ```
   <br>
