@@ -1,5 +1,5 @@
 # sar-ubt-ERC-20-hardhat.S
-<hr>
+
 # ERC-20 Contract (Hardhat Project)
 <hr>
 The goal of this project is to practice:
