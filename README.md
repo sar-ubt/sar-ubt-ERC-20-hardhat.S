@@ -48,7 +48,7 @@ Ensure that, At the top of the file `hardhat.config.js` there was:
 <br>
 And after solidity version in `hardhat.config.js` there was:
 <br>
-...JavaScript
+```JavaScript
 <br>
 networks: {
 <br>
@@ -61,7 +61,7 @@ networks: {
     },
     <br>
   },
-  ...
+  ```
   <br>
   `SEPOLIA_RPC_URL` and `PRIVATE_KEY` values as it is like written in `.env`
   <br>
