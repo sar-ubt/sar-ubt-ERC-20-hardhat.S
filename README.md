@@ -49,6 +49,7 @@ Ensure that, At the top of the file `hardhat.config.js` there was:
 And after solidity version in `hardhat.config.js` there was:
 <br>
 ...JavaScript
+<br>
 networks: {
 <br>
     sepolia: {
